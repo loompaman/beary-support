@@ -28,18 +28,15 @@ body {
   gap: 16px;
   padding: 24px 0 8px;
 }
-.logo {
+
+.logo-img {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #f7b6b8 0%, #f2d4c9 100%);
-  display: grid;
-  place-items: center;
-  color: #5b2e1a;
-  font-weight: 700;
-  font-size: 22px;
+  object-fit: cover;
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
+  background: #fff;
 }
 .brand {
   display: flex;
@@ -130,5 +127,5 @@ body {
 }
 @media (max-width: 560px) {
   .header { flex-direction: column; align-items: flex-start; }
-  .logo { width: 44px; height: 44px; border-radius: 14px; }
+  .logo-img { width: 44px; height: 44px; border-radius: 14px; }
 }
